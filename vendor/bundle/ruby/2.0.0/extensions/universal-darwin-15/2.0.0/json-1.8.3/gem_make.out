@@ -1,0 +1,37 @@
+current directory: /Users/riccardoravaro/Documents/web/riccardoravaro.com/riccardoravaro/web/vendor/bundle/ruby/2.0.0/gems/json-1.8.3/ext/json/ext/generator
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby -r ./siteconf20160301-7392-12hpd28.rb extconf.rb
+creating Makefile
+
+current directory: /Users/riccardoravaro/Documents/web/riccardoravaro.com/riccardoravaro/web/vendor/bundle/ruby/2.0.0/gems/json-1.8.3/ext/json/ext/generator
+make "DESTDIR=" clean
+
+current directory: /Users/riccardoravaro/Documents/web/riccardoravaro.com/riccardoravaro/web/vendor/bundle/ruby/2.0.0/gems/json-1.8.3/ext/json/ext/generator
+make "DESTDIR="
+compiling generator.c
+In file included from generator.c:1:
+In file included from ./../fbuffer/fbuffer.h:5:
+In file included from /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/include/ruby-2.0.0/ruby.h:33:
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/include/ruby-2.0.0/ruby/ruby.h:121:37: error: use of undeclared identifier 'SIZEOF_LONG'
+typedef char ruby_check_sizeof_long[SIZEOF_LONG == sizeof(long) ? 1 : -1];
+                                    ^
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/include/ruby-2.0.0/ruby/ruby.h:125:38: error: use of undeclared identifier 'SIZEOF_LONG'
+typedef char ruby_check_sizeof_voidp[SIZEOF_VOIDP == sizeof(void*) ? 1 : -1];
+                                     ^
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/include/ruby-2.0.0/universal-darwin15/ruby/config.h:58:22: note: expanded from macro 'SIZEOF_VOIDP'
+#define SIZEOF_VOIDP SIZEOF_LONG
+                     ^
+In file included from generator.c:1:
+In file included from ./../fbuffer/fbuffer.h:5:
+In file included from /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/include/ruby-2.0.0/ruby.h:33:
+In file included from /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/include/ruby-2.0.0/ruby/ruby.h:1568:
+In file included from /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/include/ruby-2.0.0/ruby/intern.h:43:
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/include/ruby-2.0.0/ruby/st.h:67:45: error: use of undeclared identifier 'SIZEOF_LONG'
+typedef char st_check_for_sizeof_st_index_t[SIZEOF_VOIDP == (int)sizeof(st_index_t) ? 1 : -1];
+                                            ^
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/include/ruby-2.0.0/universal-darwin15/ruby/config.h:58:22: note: expanded from macro 'SIZEOF_VOIDP'
+#define SIZEOF_VOIDP SIZEOF_LONG
+                     ^
+3 errors generated.
+make: *** [generator.o] Error 1
+
+make failed, exit code 2

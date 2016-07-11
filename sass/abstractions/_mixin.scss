@@ -1,0 +1,98 @@
+/*@mixin transition( $property, $speed, $timing-function : ease-in-out ) {
+ -webkit-transition: $property $speed ease-in-out;
+  -moz-transition: $property $speed ease-in-out;
+  -o-transition: $property $speed ease-in-out;
+  transition: $property $speed ease-in-out;
+}*/
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin animation ($stuff) {
+    -webkit-animation: $stuff;
+    -moz-animation: $stuff;
+    -ms-animation: $stuff;
+    animation: $stuff;
+}
+
+.fade-in-01s {
+    @include animation(animation-fade-in 0.1s linear);
+}
+.fade-in-04s {
+    @include animation(animation-fade-in 0.1s linear);
+}
+
+@include keyframes(animation-fade-in) {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@mixin custom-transition( $property, $speed, $func: ease-in-out) {
+    -webkit-transition: $property $speed $func;
+    -moz-transition: $property $speed $func;
+    -o-transition: $property $speed $func;
+    transition: $property $speed $func;
+}
+
+.no-transition {
+    @include custom-transition ( All, 0s);
+}
+
+.transition-1s {
+    @include custom-transition ( All, 1s);
+}
+
+.transition-05s {
+    @include custom-transition ( All, 0.5s);
+}
+
+.transition-03s {
+    @include custom-transition ( All, 0.3s);
+}
+
+.transition-02s {
+    @include custom-transition ( All, 0.2s);
+}
+
+.transition-01s {
+    @include custom-transition ( All, 0.1s);
+}
+
+@mixin colour-gradients ( $name, $colour) {
+    $name-1: lighten($orange, 30%);
+    .#{$name}-1 {
+        color: $name-1;
+    }
+    $name-2: $colour;
+    .#{$name}-2 {
+        color: $name-2;
+    }
+    $name-3: darken($orange, 5%);
+    .#{$name}-3 {
+        color: $name-3;
+    }
+    $name-4: darken($orange, 15%);
+    .#{$name}-4 {
+        color: $name-4;
+    }
+    $name-5: darken($orange, 50%);
+    .#{$name}-5 {
+        color: $name-5;
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "browser": true,
+    "bitwise": false,
+    "devel": true,
+    "curly": true,
+    "eqeqeq": false,
+    "forin": true,
+    "immed": true,
+    "indent": 2,
+    "jquery": true,
+    "latedef": false,
+    "newcap": true,
+    "noarg": true,
+    "quotmark": true,
+    "regexp": false,
+    "undef": true,
+    "unused": true,
+    "trailing": true,
+    "smarttabs": true,
+    "predef": [
+        "Drupal",
+        "Modernizr",
+        "angular",
+        "L",
+        "google",
+        "ctrl"
+    ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "rr",
+  "description": "riccardoravaro symfony Angular app",
+  "version": "1.0.0",
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Riccardo Ravaro",
+    "url": "http://riccardoravaro.com/"
+  },
+  "homepage": "http://www.riccardoravaro.com/",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:riccardoravaro-web-dev/riccardoravaro.com.git"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/riccardoravaro/riccardoravaro.com/issues?status=new&status=open"
+  },
+  "dependencies": {
+    "bourbon-neat": "^1.8.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.3",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-uglify": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-html-angular-validate": "^0.4.0",
+    "grunt-html2js": "~0.2.9",
+    "install": "^0.1.8",
+    "grunt-csssplit": "latest",
+    "grunt-bless": "latest",
+    "autoprefixer": "^6.3.6",
+    "bourbon": "^4.2.7",
+    "bourbon-neat": "^1.7.4",
+    "cssnano": "^3.7.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "node-normalize-scss": "^1.3.1"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

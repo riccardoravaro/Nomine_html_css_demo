@@ -1,0 +1,63 @@
+
+@mixin respond-to($media) {
+ //mobile landscape
+  @if $media == xs-l {
+    @media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : landscape) { @content;}
+  }
+ // mobile portrait
+  @else if $media == xs-p {
+  @media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : portrait) { @content;}
+  }
+ // mobile
+  @else if $media == mb {
+  @media only screen and (max-width: 480px) { @content;}
+  }
+  @else if $media == mb-min {
+    @media only screen and (min-width: 480px) { @content;}
+  }
+    @else if $media == mb-max {
+    @media only screen and (max-width: 480px) { @content;}
+  }
+  @else if $media == xs {
+    @media only screen and (max-width: $xs) { @content; }
+  }
+
+  @else if $media == xs-min {
+    @media only screen and (min-width: $xs) { @content; }
+  }
+  @else if $media == sm {
+    @media only screen and (min-width: $sm)  { @content; }
+  }
+  @else if $media == sm-max {
+    @media only screen and (max-width: $sm)  { @content; }
+  }
+  @else if $media == ml {
+     @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+      @content;
+     }
+     @media only screen and (min-height: 300px) and (min-width: 560px) {
+      @content;
+     }
+  }
+  @else if $media == md {
+    @media only screen and (min-width: $md) {
+     @content;
+    // .old-ie & {
+    //  @content;
+     // }
+   }
+  }
+    @else if $media == md-max {
+    @media only screen and (max-width: $md) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (min-width: $lg) { @content; }
+  }
+
+}

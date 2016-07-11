@@ -1,0 +1,25 @@
+{
+  "name": "rr",
+  "authors": [
+    "riccardo <ravaro.riccardo@gmail.com>"
+  ],
+  "description": "rr",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+   "dependencies": {
+    "bootstrap": "~3.2.0",
+    "bootstrap-sass": "~3.3.4",
+    "animatewithsass": "latest",
+    "flat-ui-sass": "latest",
+     "normalize-scss": "latest"
+    }
+}

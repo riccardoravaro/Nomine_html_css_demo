@@ -1,0 +1,18 @@
+/Users/riccardoravaro/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160302-62050-1ty0jeo.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling color.c
+compiling oily_png_ext.c
+compiling operations.c
+compiling png_decoding.c
+compiling png_encoding.c
+compiling resampling.c
+linking shared-object oily_png/oily_png.bundle
+ld: warning: directory not found for option '-L/Users/haven/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 oily_png.bundle ./.gem.20160302-62050-kaktnt/oily_png
+installing default oily_png libraries
